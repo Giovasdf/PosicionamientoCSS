@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Posicionamiento en CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Posicionamiento Relativo (relative)</h2>
+        <p>El elemento se posiciona en relación a su posición normal en el flujo del documento.</p>
+        <div style="position: relative; top: 20px; left: 30px; background-color: lightgray; padding: 10px;">
+            Este es un elemento con posicionamiento relativo.
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Posicionamiento Absoluto (absolute)</h2>
+        <p>El elemento se posiciona en relación a su primer contenedor posicionado (no estático). Sale del flujo normal del documento.</p>
+        <div style="position: relative; background-color: lightgray; padding: 10px;">
+            Contenedor relativo
+            <div style="position: absolute; top: 10px; right: 10px; background-color: lightcoral; padding: 10px;">
+                Este es un elemento con posicionamiento absoluto.
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Posicionamiento Fijo (fixed)</h2>
+        <p>El elemento se posiciona en relación a la ventana del navegador y no se mueve al hacer scroll.</p>
+        <div style="position: fixed; top: 0; left: 0; width: 100%; background-color: yellow; padding: 10px;">
+            Este es un elemento con posicionamiento fijo.
+        </div>
+        <div style="margin-top: 60px;">
+            Este contenido se desplaza al hacer scroll.
+        </div>
+    </div>
+
+    <div class="container" style="height: 2000px;">
+        <h2>Posicionamiento Pegajoso (sticky)</h2>
+        <p>El elemento se comporta como relativo hasta que su contenedor alcanza un umbral de desplazamiento, después de lo cual se comporta como fijo.</p>
+        <div style="position: sticky; top: 0; background-color: lightblue; padding: 10px;">
+            Este es un elemento con posicionamiento pegajoso.
+        </div>
+        <p>Desplázate hacia abajo para ver el comportamiento pegajoso.</p>
+    </div>
+
+    <div class="container">
+        <h2>Flotante (float)</h2>
+        <p>El elemento se desplaza a la izquierda o a la derecha, permitiendo que otros elementos fluyan a su alrededor.</p>
+        <div style="float: left; width: 50%; background-color: pink; padding: 10px;">
+            Este es un elemento flotante a la izquierda.
+        </div>
+        <div style="float: right; width: 50%; background-color: lightgreen; padding: 10px;">
+            Este es un elemento flotante a la derecha.
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="container">
+        <h2>Índice Z (z-index)</h2>
+        <p>El índice Z determina el orden de apilamiento de los elementos posicionados. Los elementos con mayor z-index se apilan por encima de los elementos con menor z-index.</p>
+        <div style="position: relative; z-index: 1; background-color: red; width: 100px; height: 100px;">
+            Elemento con z-index 1
+        </div>
+        <div style="position: relative; z-index: 2; background-color: blue; width: 100px; height: 100px; margin-top: -50px;">
+            Elemento con z-index 2
+        </div>
+    </div>
+
+</body>
+</html>

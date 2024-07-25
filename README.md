@@ -1,6 +1,5 @@
 # PosicionamientoCSS
 
-# Crear y escribir en el archivo README.md
 # Ejemplos de Posicionamiento en CSS
 
 Este documento proporciona ejemplos y explicaciones de diferentes tipos de posicionamiento en CSS: `relative`, `absolute`, `fixed`, `sticky`, `float` y `z-index`.
